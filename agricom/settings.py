@@ -145,4 +145,5 @@ LEAFLET_CONFIG = {
     'ATTRIBUTION_PREFIX': 'Inspired by Life in GIS'
 }
 DATABASES['default'].update(db_from_env)
+DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
